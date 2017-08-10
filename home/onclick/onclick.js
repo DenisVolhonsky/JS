@@ -3,7 +3,7 @@ function f1() {
 }
 
 function f2() {
-    document.write('This is document.write');
+    var a = document.write('This is document.write');
 }
 
 function f3() {
