@@ -10,7 +10,6 @@ function f2() {
     var audio = new Audio(); // Создаём новый элемент Audio
     audio.src = '1.mp3'; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
-    document.body.style.background = 'red';
-
+    // document.getElementsByTagName('button').style.color = 'red';
 
 }

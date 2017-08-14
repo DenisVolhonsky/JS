@@ -1,0 +1,24 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    background: #ffebd0;
+}
+.my_form {
+    width: 360px;
+    height: 120px;
+    border: 2px solid #000;
+    margin: 30px auto;
+    padding: 10px;
+    background: #4b8bff;
+}
+#inp {
+    width: 100px;
+    text-align: center;
+    color: #ff0900;
+}
+button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
