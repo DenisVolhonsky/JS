@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form {
+            font-family: sans-serif;
+            border: 1px solid black;
+            margin: 20px auto;
+            width: 500px;
+            padding: 10px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form">
+    <h2>Калькулятор валюты</h2>
+    <p>Введите сумму в гривнах: <input type="text" id="sum_grn"></p>
+    <button id="change">Перевести в доллары</button>
+    <p id="out"></p>
+</div>
+
+<div class="form">
+    <h2>Калькулятор расхода</h2>
+    <p>Введите ширину комнаты в метрах : <input type="text" id="w"></p>
+    <p>Введите длинну комнаты в метрах : <input type="text" id="l"></p>
+    <p>Введите слой засыпки в (см) : <input type="text" id="h"></p>
+    <button id="push">Расчитать расход</button>
+    <p id="rashod"></p>
+    <p id="meshki"></p>
+</div>
+
+<!--<div class="form">-->
+    <!--<h2>Килограмы в фунты</h2>-->
+    <!--<p>Введите кол-во кг: <input type="text" id="kg"></p>-->
+    <!--<button id="perevod">Перевести в фунты</button>-->
+    <!--<p id="out2"></p>-->
+<!--</div>-->
+
+<div class="form">
+    <h2>Калькулятор ГБО</h2>
+    <p>Введите расход в (л) на 100км: <input type="text" id="rashod1"></p>
+    <p>Введите пробег (км) в месяц: <input type="text" id="probeg"></p>
+    <button id="push_gbo">Расчитать</button>
+    <p id="out2"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
