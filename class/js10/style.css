@@ -1,0 +1,7 @@
+nav ul {
+	display: none;
+}
+nav div {
+	float: left;
+	margin: 10px 30px;
+}
