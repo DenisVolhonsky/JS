@@ -1,0 +1,12 @@
+div {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 10px;
+}
+.six {
+	margin: 0;
+	margin-left: 300px;
+	width: 50px;
+	height: 50px;
+}
