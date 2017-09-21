@@ -1,0 +1,15 @@
+#adme, .top, .bottom {
+	width: 470px;
+	height: 455px;
+	border: 10px solid black;
+	position: relative;
+}
+
+.top, .bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border: none;
+	transition: all ease 200ms;
+}
