@@ -1,7 +1,6 @@
 * {
 	font-family: sans-serif;
 }
-
 .sizing {
 	width: 90px;
 	height: 90px;
@@ -10,7 +9,6 @@
 	margin: 7px;
 	text-align: center;
 }
-
 .bordered {
 	width: 90px;
 	height: 90px;
@@ -19,7 +17,30 @@
 	margin: 7px;
 
 }
-
+.red {
+	background: red;
+}
+.blue {
+	background: blue;
+}
+.acc {
+	width: 300px;
+	height: auto;
+	background: darkgray;
+	cursor: pointer;
+}
+.acc-block:hover {
+	background: lightgrey;
+}
+.min {
+	height: 50px;
+	overflow: hidden;
+	margin: 0;
+	transition: 200ms;
+}
+h1 {
+	margin: 0;
+}
 
 
 

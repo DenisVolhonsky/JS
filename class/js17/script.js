@@ -46,15 +46,38 @@ for(var i=0; i<10; i++) {
 	}
 }
 
-// Задача. Выведите в консоль количество элементов, которые имеют класс bordered.
+// Задача4. Выведите в консоль количество элементов, которые имеют класс bordered.
 document.getElementById('calcBordered').onclick = function() {
     var count = document.querySelectorAll('.bordered');
 	console.log('На данный момент на странице '+ count.length +' елемент(ов) имеют класс "bordered"' );
 }
 
+// Задача5. Создайте два класса: red и blue. Каждый класс заливает элемент
+// соответствующим цветом. Напишите скрипт, который при клике меняет
+// класс red на blue и наоборот.
+document.getElementById('color').onclick = function () {
+		this.classList.toggle('blue');
+}
+
+// Задача6. Напишите аккордеон. Используя верстку представленную ниже
+// задайте класс min высоту элемента так, чтобы было видно только
+// заголовок h1.
+// Создайте скрипт, который при клике удаляет класс min (если он есть у
+// элемента) или добавляет его если его нет. При этом текст находящийся в
+// параграфе будет скрываться или становится видимым.
 
 
- 
+var min = document.getElementsByClassName('min');
+
+    for (var i=0; i<min.length; i++) {
+        min[i].onclick = function () {
+            this.classList.toggle('min');
+
+        }
+    }
+
+
+
 
 
 
