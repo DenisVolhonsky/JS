@@ -32,11 +32,11 @@
 .acc-block:hover {
 	background: lightgrey;
 }
+
 .min {
 	height: 50px;
 	overflow: hidden;
 	margin: 0;
-	transition: 200ms;
 }
 h1 {
 	margin: 0;

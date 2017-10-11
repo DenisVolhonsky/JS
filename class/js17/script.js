@@ -58,38 +58,38 @@ document.getElementById('calcBordered').onclick = function() {
 document.getElementById('color').onclick = function () {
 		this.classList.toggle('blue');
 }
-
+//
 // Задача6. Напишите аккордеон. Используя верстку представленную ниже
 // задайте класс min высоту элемента так, чтобы было видно только
 // заголовок h1.
 // Создайте скрипт, который при клике удаляет класс min (если он есть у
 // элемента) или добавляет его если его нет. При этом текст находящийся в
 // параграфе будет скрываться или становится видимым.
+//
+// Задача7. Используя код предыдущей задачи доработайте ее так, чтобы в
+// один момент времени был виден только один элемент. Если кликают на
+// другой элемент, то скрываются все открытые, а данный становится
+// видимым.
 
+var accBlock = document.getElementsByClassName('acc-block');
 
-var min = document.getElementsByClassName('min');
-
-    for (var i=0; i<min.length; i++) {
-        min[i].onclick = function () {
+    for (var i=0; i<accBlock.length; i++) {
+        accBlock[i].onclick = function() {
             this.classList.toggle('min');
-
+            if(!this.classList.contains('min')){ // если развернут
+                for(var j=0; j<accBlock.length; j++)
+                    accBlock[j].classList.add('min'); // сворачиваем все
+                this.classList.remove('min'); // и разворачиваем то что нажали
+            }
         }
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Задача8. Создайте блок и поместите в него изображения. С помощью CSS
+// позиционируйте изображения так, чтобы они располагались друг на друге.
+// Добавьте всем кроме одного класс hide, который скрывает изображения.
+// При клике на блоке скрывайте текущее изображение и показывайте
+// следующее.
 
 
 
