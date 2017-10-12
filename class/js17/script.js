@@ -23,12 +23,12 @@
 // 			this.classList.toggle('bordered');
 // 		}
 // 	}
-
-	document.onclick = function(event){
-	event = event||window.event;
-	if(event.target.tagName =='IMG')
-		event.target.classList.toggle('bordered');
-	}
+/////////Раскоментировать////////////////////
+	// document.onclick = function(event){
+	// event = event||window.event;
+	// if(event.target.tagName =='IMG')
+	// 	event.target.classList.toggle('bordered');
+	// }
 
 // Задача3. Создайте с помощью JS несколько блоков. Четным блокам
 // добавьте класс bordered. Добавьте на все блоки событие клика. При клике
@@ -76,14 +76,13 @@ var accBlock = document.getElementsByClassName('acc-block');
     for (var i=0; i<accBlock.length; i++) {
         accBlock[i].onclick = function() {
             this.classList.toggle('min');
-            if(!this.classList.contains('min')){ // если развернут
-                for(var j=0; j<accBlock.length; j++)
+            if (!this.classList.contains('min')) { // если развернут
+                for (var j = 0; j < accBlock.length; j++)
                     accBlock[j].classList.add('min'); // сворачиваем все
                 this.classList.remove('min'); // и разворачиваем то что нажали
             }
         }
     }
-
 
 // Задача8. Создайте блок и поместите в него изображения. С помощью CSS
 // позиционируйте изображения так, чтобы они располагались друг на друге.
@@ -91,6 +90,21 @@ var accBlock = document.getElementsByClassName('acc-block');
 // При клике на блоке скрывайте текущее изображение и показывайте
 // следующее.
 
+var block = document.querySelector('.block-img');
+var images = block.children;
+var count = images.length;
+document.onclick = function (event) {
+    event = event || window.event;
+    if (event.target.tagName == 'IMG') {
+        event.target.classList.toggle('hide');
+        count--
+    }
+    if (count == 0) {
+        count= images.length;
+        for (var i = 0; i < images.length; i++)
+            images[i].classList.remove('hide')
+    }
+}
 
 
 
@@ -185,20 +199,6 @@ var accBlock = document.getElementsByClassName('acc-block');
 
 
 
-
-
-
-
-// var selectorClass = document.getElementsByClassName('selectorClass')[0];
-// console.log(selectorClass.className);
-// console.log(selectorClass.classList.contains('selectorClass'));
-// selectorClass.classList.add('selectorClass123');
-// console.log(selectorClass.className);
-// selectorClass.classList.remove('selectorClass123');
-// console.log(selectorClass.className);
-// btn.onclick = function(){
-//     selectorClass.classList.toggle('selectorClass123');
-// }
 
 
 

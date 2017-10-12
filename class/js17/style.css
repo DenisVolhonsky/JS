@@ -24,13 +24,13 @@
 	background: blue;
 }
 .acc {
-	width: 300px;
+	width: 700px;
 	height: auto;
-	background: darkgray;
+	background: lightgrey;
 	cursor: pointer;
 }
 .acc-block:hover {
-	background: lightgrey;
+	background: darkgray;
 }
 
 .min {
@@ -40,6 +40,28 @@
 }
 h1 {
 	margin: 0;
+}
+.acc-block p {
+	background: white;
+	padding: 5px;
+}
+
+.block-img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: relative;
+}
+.hide {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.block-img img{
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 
