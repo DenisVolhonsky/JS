@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    box-sizing: border-box;
+}
+#block1 {
+    height: 100px;
+    width: 400px;
+    margin-left: 100px;
+}
+#block2 {
+    width: 100px;
+    height: 400px;
+    float: left;
+}
+#block3 {
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+#block4 {
+    width: 100px;
+    height: 400px;
+    float: left;
+}
+#block5 {
+    height: 100px;
+    width: 400px;
+    margin-left: 100px;
+}
+.clear {
+    clear: both;
+}
+img {
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
