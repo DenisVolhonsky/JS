@@ -10,11 +10,11 @@ function music1() {
     audio.src = '1.mp3';
     audio.autoplay = true;
 }
-function music2() {
-    var audio = new Audio();
-    audio.src = '2.mp3';
-    audio.autoplay = true;
-}
+// function music2() {
+//     var audio = new Audio();
+//     audio.src = '2.mp3';
+//     audio.autoplay = true;
+// }
 block3.onmouseover = function (event) {
     event = event || window.event;
     if (event.relatedTarget === block1) {
@@ -22,7 +22,7 @@ block3.onmouseover = function (event) {
         img.style.left = 0;
         img.style.display = 'block';
         music1();
-        img.animate([{top: "-402px", transform:"rotate(0deg)"}, {top: "0",transform:"rotate(360deg)"}], {duration: 500});
+        img.animate([{top: "-402px", transform:"rotate(0deg)"}, {top: "0",transform:"rotate(360deg)"}], {duration: 1000});
         img.style.top = 0 + 'px';
         t = 1;
     }
@@ -31,7 +31,7 @@ block3.onmouseover = function (event) {
         img.style.left = 0;
         img.style.display = 'block';
         music1();
-        img.animate([{top: "402px", transform:"rotate(0deg)"},{top: "0", transform:"rotate(360deg)"}], {duration: 500});
+        img.animate([{top: "402px", transform:"rotate(0deg)"},{top: "0", transform:"rotate(360deg)"}], {duration: 1000});
         img.style.top = 0 + 'px';
         t = 5;
     }
@@ -40,7 +40,7 @@ block3.onmouseover = function (event) {
         img.style.left = -402 + 'px';
         img.style.display = 'block';
         music1();
-        img.animate([{left: "-402px", transform:"rotate(0deg)"}, {left: "0", transform:"rotate(360deg)"}], {duration: 500});
+        img.animate([{left: "-402px", transform:"rotate(0deg)"}, {left: "0", transform:"rotate(360deg)"}], {duration: 1000});
         img.style.left = 0 + 'px';
         t = 2;
     }
@@ -49,7 +49,7 @@ block3.onmouseover = function (event) {
         img.style.left = 402 + 'px';
         img.style.display = 'block';
         music1();
-        img.animate([{left: "402px", transform:"rotate(0deg)"}, {left: "0", transform:"rotate(-360deg)"}], {duration: 500});
+        img.animate([{left: "402px", transform:"rotate(0deg)"}, {left: "0", transform:"rotate(-360deg)"}], {duration: 1000});
         img.style.left = 0 + 'px';
         t = 4;
     }
@@ -57,23 +57,23 @@ block3.onmouseover = function (event) {
 block3.onmouseout = function (event) {
     event = event || window.event;
     if (t === 1) {
-        music2();
+        //music2();
         img.animate([{top: "0px", transform:"rotate(0deg)"}, {top: "-402px", transform:"rotate(-360deg)"}], {duration: 500});
         img.style.top = -402 + 'px';
     }
     if (t === 5) {
-        music2();
+        //music2();
         img.animate([{top: "0px", transform:"rotate(0deg)"}, {top: "402px",transform:"rotate(-360deg)"}], {duration: 500});
         img.style.top = 402 + 'px';
     }
     if (t === 2) {
-        music2();
+        //music2();
         img.animate([{left: "0px", transform:"rotate(0deg)"}, {left: "-402px", transform:"rotate(-360deg)"}], {duration: 500});
         img.style.left = -402 + 'px';
     }
     if (t === 4) {
-        music2();
-        img.animate([{left: "0px"}, {left: "402px"}], {duration: 500});
+        //music2();
+        img.animate([{left: "0px", transform:"rotate(0deg)"}, {left: "402px", transform:"rotate(360deg)"}], {duration: 500});
         img.style.left = 402 + 'px';
     }
 };
